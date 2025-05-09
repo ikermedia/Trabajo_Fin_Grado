@@ -1,0 +1,15 @@
+{
+  "name": "chatbot-client",
+  "version": "1.0.0",
+  "description": "chatbot client",
+  "license": "ISC",
+  "author": "iker ortega",
+  "type": "commonjs",
+  "main": "ChatBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@ikermedia/chatbot": "^1.0.6"
+  }
+}

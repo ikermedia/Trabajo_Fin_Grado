@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot Template</title>
+   <!--  <link href="./custom.css" rel="stylesheet"> -->
+    <link href="./output.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <main class="w-1/2 m-auto space-y-4 p-5">
+
+    <div class="bg-white border-gray-200 max-w-md rounded-xl border p-4 flex flex-col gap-4 shadow-md text-sm" style="height: 500px;">
+      <div class="flex justify-between">
+        <div>
+          <img src="img/logo-unir-2.svg" style="height: 25px">
+        </div>
+        <div class="content-center font-bold">
+          Tecnologías Emergentes
+        </div>
+        <div class="flex gap-2 justify-end">
+          <button class="close-btn rounded-full  bg-blue-400 hover:bg-blue-300 active:bg-blue-500 cursor-pointer" style="height: 30px; width: 30px;">
+            <img class="m-auto" src="img/eraser-fill.svg"/>
+          </button>
+          <button class="close-btn rounded-full bg-gray-50 hover:bg-gray-100 active:bg-gray-200 cursor-pointer" style="height: 30px; width: 30px;">
+            <img class="m-auto" src="img/x-lg.svg">
+          </button>
+        </div>
+      </div>
+      
+      <div class="js-chat-log flex flex-col flex-grow gap-4 overflow-y-auto pr-2">
+        <div class="js-message ${msg.role} rounded-lg p-2 bg-blue-100 self-start whitespace-pre-line">En que le puedo ayudar</div>
+        <div class="js-message ${msg.role} rounded-lg p-2 bg-green-200 self-end whitespace-pre-line">Tengo algunas dudas del temario</div>
+      </div>
+
+      <div class="js-chat-input flex flex-row gap-2">
+        <textarea type="text"class="bg-gray-100 rounded-lg border border-gray-200 w-full p-2 resize-none" rows="3"  placeholder="Type a message..."></textarea>
+        <button class="js-send-btn bg-blue-400 hover:bg-blue-300 active:bg-blue-500 rounded-lg" style="width: 60px">
+            <img src="./img/send-fill.svg" class="m-auto" height="25px" width="25px">
+        </button>
+      </div>
+    </div>
+    <button class="js-toggle-chat-btn rounded-full bg-blue-400 hover:bg-blue-300 active:bg-blue-500 shadow-md color-white mt-4 float-right" style="width:60px; height:60px">
+      <img src="./img/chat-right-dots-fill.svg" class="m-auto" height="25px" width="25px">
+    </button>
+
+  </main>
+  </body>
+</html>
+
+
